@@ -6,7 +6,22 @@ BBB Recording Server runs a BigBlueButton server that is used only for recording
 
 BBB Recording Clients are regular BigBlueButton servers where classes are conducted. 
 
-# How to use
+## How it works
+After a class ends, a BigBlueButton server runs a three stage process (archive, process and publish) to create recording of the class. During process stage, it runs 'ffmpeg' to process audio and video, which takes significant amount of server resources. 
+
+Hence, processing recording impacts performance of on-going live classes. 
+
+One way, to fix it, is to schedule recording processing after classes as [detailed here](https://github.com/manishkatyan/bbb-optimize#change-processing-interval-for-recordings)
+
+However, recording publishing gets delayed when you schedule recording prcoessing after classes.
+
+Hence, in this project, we setup a separate BigBlueButton server (BBB Recording server) that only processes recordings. All client BigBlueButtons (BBB Recording client) will rsync raw recordings to BBB Recording server.
+
+In its default installation, BigBlueButton runs a single recording process. On BBB Recording server we can increase number of recording processes to up to 10, as detaield below. 
+
+This project also makes BBB Recording clients stateless, which means you can shut off BBB clients in AWS to lower your hosting costs. 
+
+## How to use
 On BigBlueButton Recording server
 1. Clone the repository: https://github.com/manishkatyan/bbb-recording-server
 2. Setup Supervisor
@@ -30,3 +45,6 @@ On each BigBlueButton Recording client:
 - bbb_recording_server_path: Path where `bbb-recording-server` is installed on BBB Recording server
 - bbb_recording_client_ssh_private_key: filename of SSH private key on BBB Recording client. SSH private key is used for password-less SSH login to BBB Recording server
 
+4. Once you have setup BBB Recording server and client, following above steps, you are all set. As classes get completed on BBB Recording clinets, recordings would be rsync to BBB Recording server, who, in turn, would process and publish recordings.
+
+5. Optionally, you can also enable BBB Recording server to convert recordings into MP4 as [detailed here](https://github.com/manishkatyan/bbb-mp4)
