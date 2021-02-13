@@ -48,3 +48,23 @@ On each BigBlueButton Recording client:
 4. Once you have setup BBB Recording server and client, following above steps, you are all set. As classes get completed on BBB Recording clinets, recordings would be rsync to BBB Recording server, who, in turn, would process and publish recordings.
 
 5. Optionally, you can also enable BBB Recording server to convert recordings into MP4 as [detailed here](https://github.com/manishkatyan/bbb-mp4)
+
+## More on BigBlueButton
+
+Check-out the following apps to further extend features of BBB.
+
+### [bbb-twilio](https://github.com/manishkatyan/bbb-twilio)
+
+Integrate Twilio into BigBlueButton so that users can join a meeting with a dial-in number. You can get local numbers for almost all the countries.
+
+### [bbb-mp4](https://github.com/manishkatyan/bbb-mp4)
+
+With this app, you can convert a BigBlueButton recording into MP4 video and upload to S3. You can covert multiple MP4 videos in parallel or automate the conversion process.
+
+### [bbb-streaming](https://github.com/manishkatyan/bbb-streaming)
+
+Livestream your BigBlueButton classes on Youtube or Facebook to thousands of your users.
+
+### [100 Most Googled Questions on BigBlueButton](https://higheredlab.com/bigbluebutton-guide/)
+
+Everything you need to know about BigBlueButton including pricing, comparison with Zoom, Moodle integrations, scaling, and dozens of troubleshooting.
