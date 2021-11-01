@@ -53,6 +53,16 @@ On each BigBlueButton Recording client:
 
 Check-out the following apps to further extend features of BBB.
 
+### [bbb-jamboard](https://github.com/manishkatyan/bbb-jamboard)
+
+The default whiteboard of BigBlueButton has limited features including no eraser. Many teachers wish to have a more features-rich whiteboard that would help them better in conducting online classes.
+
+With BBB-Jamboard, you can easily integrate Google Jamboard into your BigBlueButton server.
+
+Jamboard is a digital interactive whiteboard developed by Google and can be used in stead of the default BugBlueButton whiteboard. Google Jamboard has the eraser feature that has often been requested by BigBlueButton users.
+
+
+
 ### [bbb-twilio](https://github.com/manishkatyan/bbb-twilio)
 
 Integrate Twilio into BigBlueButton so that users can join a meeting with a dial-in number. You can get local numbers for almost all the countries.
@@ -64,6 +74,10 @@ With this app, you can convert a BigBlueButton recording into MP4 video and uplo
 ### [bbb-streaming](https://github.com/manishkatyan/bbb-streaming)
 
 Livestream your BigBlueButton classes on Youtube or Facebook to thousands of your users.
+
+### [bbb-optimize](https://github.com/manishkatyan/bbb-customize)
+
+Better audio quality, increase recording processing speed, dynamic video profile, pagination, fix 1007/1020 errors and use apply-config.sh to manage your customizations are some key techniques for you to optimize and smoothly run your BigBlueButton servers.
 
 ### [100 Most Googled Questions on BigBlueButton](https://higheredlab.com/bigbluebutton-guide/)
 
