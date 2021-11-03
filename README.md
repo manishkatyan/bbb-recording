@@ -79,6 +79,10 @@ Livestream your BigBlueButton classes on Youtube or Facebook to thousands of you
 
 Better audio quality, increase recording processing speed, dynamic video profile, pagination, fix 1007/1020 errors and use apply-config.sh to manage your customizations are some key techniques for you to optimize and smoothly run your BigBlueButton servers.
 
+### [bbb-admin](https://github.com/manishkatyan/bbb-admin)
+
+Scripts for BigBlueButton admins including extracting IP of users joining, participants attendance, poll answers and many other analytics. 
+
 ### [100 Most Googled Questions on BigBlueButton](https://higheredlab.com/bigbluebutton-guide/)
 
 Everything you need to know about BigBlueButton including pricing, comparison with Zoom, Moodle integrations, scaling, and dozens of troubleshooting.
